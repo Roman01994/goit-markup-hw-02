@@ -1,7 +1,40 @@
-.body {
-    font-family: roboto;
-    weight:
-      Size: 16px;
-       Line Height: 24px;
-        Letter Spacing: 2%;
+body {
+  font-family: "Roboto";
+  font-weight: Regular;
+  size: 16px;
+  line-height: 24px;
+  letter spacing:2%;
+  color: #434455;
+  background-color: #FFFFFF;
+  padding: 54px 40px 24px 40px;
 }
+
+button  {
+  cursor: pointer;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+/* Contacts */
+
+
+.contacts-number {
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #434455;
+}
+
+.contacts-email {
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #434455;
+}
+
