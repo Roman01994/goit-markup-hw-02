@@ -44,6 +44,7 @@ button  {
 .logo{
   font-family: Raleway;
   Font-style: ExtraBold;
+  font-Weight:800;
   Font-size: 18px;
   Line-height: 1.16;
   Align: Left;
@@ -142,6 +143,7 @@ Height:56px;
 
 .upside {
 Font-style: Medium;
+font-Weight:500;
 Font-size: 20px;
 Line-height: 1.2;
 Letter-spacing: 0.02em;
