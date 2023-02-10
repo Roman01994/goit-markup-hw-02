@@ -40,7 +40,18 @@ button  {
     clip-path: inset(50%);
     margin: -1px;
 }
+.container-logo{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
 
+position: absolute;
+width: 115px;
+height: 24px;
+left: 156px;
+top: 24px;
+}
 .logo{
   font-family: Raleway;
   Font-style: ExtraBold;
@@ -57,8 +68,51 @@ button  {
     color:#2E2F42;
   }
 
+.container-nav-link{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
 
+position: absolute;
+width: 261px;
+height: 200px;
+left: 347px;
+top: 24px;
+}
 
+.container-studio{
+  width: 48px;
+height: 24px;
+}
+.container-portfolio{
+  
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #f44336;
+  padding: 0px;
+  margin: 24px;
+  background-color: #ffeb3b;
+  position: absolute;
+width: 261px;
+height: 200px;
+left: 347px;
+top: 24px;
+}
+
+.container-contacts{
+  width: 67px;
+  height: 24px;
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #f44336;
+  padding: 0px;
+  margin: 24px;
+  background-color: #ffeb3b;
+}
 .link {
 	text-decoration: none;
 }
@@ -84,7 +138,13 @@ p {
 
 
 /* Contacts */
-
+.container-number{
+  position: absolute;
+width: 151px;
+height: 24px;
+left: 1133px;
+top: 24px;
+}
 
 .contacts-number {
   font-style: Regular;
@@ -94,6 +154,14 @@ p {
 	color: #434455;
 	letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.container-email{
+  position: absolute;
+  width: 153px;
+  height: 24px;
+  left: 940px;
+  top: 24px;
 }
 
 .contacts-email {
@@ -197,10 +265,14 @@ color:#2E2F42;
   color:#F4F4FD;
 }
 .footerInformation{
-  color:#E7E9FC;
-  Font-size: 16px;
-Line-height:1.5;
-Letter-spacing: 0.02em;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  
+  
+  letter-spacing: 0.02em;
+  color: #E7E9FC;
 }
 
 /* Portfolio Button */
