@@ -1,279 +1,239 @@
+#ffffff  #434455  #2e2f42  #404bbf  #4d5ae5  #f4f4fd;  #e7e9fc
+:root { 
+--primary-bg-color: #ffffff;
+--primary-font-color: #434455;
+--secondary-font-color: #2E2F42; 
+--secondary-bg-color:#2E2F42;
+--logo-color: #4D5AE5;
+--section-team-bg-color: #F4F4FD;
+--footer-inf-color:#E7E9FC;
+--active-nav-color:#404BBF;
 
+}
 
-/* xGlobal styles */
+/* Global styles */
 
 body {
-font-family: "Roboto";
-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
-background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary-font-color);
+  background-color: var(--primary-bg-color);
 }
 
-li {
-  list-style-type: none;
- 
-}
-ul{
-  margin: 0;
-  padding: 0;
+
+.list {
+	list-style-type: none;
 }
 
-button  {
-  cursor: pointer;
+ul {
+	margin: 0;
+	padding: 0;
 }
+
+
 
 .visually-hidden {
- position: absolute;
-    white-space: nowrap;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      border: 0;
-      padding: 0;
-      clip: rect(0 0 0 0);
-      clip-path: inset(50%);
-      margin: -1px;   
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
 }
 
-.logo{
-  
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.3;
-display: flex;
-align-items: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #4D5AE5;
-  }
-  .headerTextStudio{
-    color:#2E2F42;
-  }
-
+.logo {
+	font-family: "Raleway";
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.3;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--logo-color);
+}
+.header-text-studio {
+	color: var(--logo-text-studio);
+}
 
 .link {
 	text-decoration: none;
 }
 
 .nav-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2E2F42;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--nav-link-color);
 }
 .nav-link:hover,
 .nav-link:focus {
-	color: #404bbf;
+	color: var(--nav-link-color-hover);
 }
-
-
-
-
-p {
-	font-style: normal;
-	font-weight: 400;
-}
-
 
 /* Contacts */
 
-
 .contacts-number {
-  font-style: normal;
-  font-weight: 400;
+	font-style: normal;
 	font-size: 16px;
 	line-height: 1.5;
-	color: #434455;
+	color: var(--contacts-color);
 	letter-spacing: 0.02em;
-  text-decoration: none;
+	text-decoration: none;
 }
 
-
-
 .contacts-email {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  text-decoration: none;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--contacts-color);
+	text-decoration: none;
 }
 
 .contacts-email:hover,
 .contacts-email:focus {
-	color: #404bbf;
+	color: var(--contacts-color-mail-hover);
 }
 
-
 .hero {
-	background-color: #2e2f42;
+	background-color: var(--hero-bg-color);
 }
 
 .title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #FFFFFF;
+font-size: 56px;
+line-height: 1.07;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--title-color);
 }
 
-.buttonOrderService {
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height:  1.5;
-display: flex;
-align-items: center;
-letter-spacing: 0.04em;
-color: #FFFFFF;
-background: #4D5AE5;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-
+.button {
+	cursor: pointer;
+  font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
-.buttonOrderService:hover,
-.buttonOrderService:focus{
-  background-color:#404BBF;
+.button.primary {
+
+	color: var(--button-primary-color);
+	background: var(--button-primary-bg-color);
+	box-shadow: var(--button-primary-box-shadow-color);
+	border-radius: 4px;
 }
 
-
-
-.upside {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2E2F42;
+.button.primary:hover,
+.button.primary:focus {
+	background-color: var(--button-primary-bg-color-hover);
 }
 
-.work{
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2E2F42;
+.future {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: #2e2f42;
 }
 
-.containerTeam{
-  background-color: #F4F4FD;
+.list-work {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.1;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+	color: var(--title-color);
 }
 
-.containerTeamCard{
-  background-color: #FFFFFF;
+.section-team {
+	background-color: var(--section-team-bg-color);
 }
 
-.team{
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2E2F42;
+.team-card {
+	background-color: var(--team-card-bg-color);
 }
 
-.name{
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #2E2F42;
+.team-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.1;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+	color: var(--team-title-color)
+}
+.team-name {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color:var(--team-name-color);
 }
 
-.stecialist{
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #434455;
+.team-stecialist {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--tam-specialist-color);
 }
 
-.footer{
-background-color: #2E2F42;
+.footer {
+	background-color: var(--footer-bg-color);
 }
 
-.footerTextStudio{
-  color:#F4F4FD;
+.footer-text-studio {
+	color: var(--footer-logo-text-studio-color);
 }
-.footerInformation{
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #E7E9FC;
+.footer-information {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--fotter-text-inf-color);
 }
 
 /* Portfolio Button */
-.buttonAll {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #FFFFFF;
-  background: #404BBF;
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
-}
-.buttonAll:hover,
-.buttonAll:focus{
-  color:#4D5AE5;
-  background-color: #E7E9FC;
-  
 
+.button.secondary {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: var(--button-secondary-color);
+	background: var(--button-secondary-bg-color);
+	border: 1px solid var(--button-secondary-border-color);
+	border-radius: 4px;
 }
 
-.buttonPortfolio {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #4D5AE5;
-  background: #F4F4FD;
-border: 1px solid #E7E9FC;
-border-radius: 4px;
+.button.secondary:hover,
+.button.secondary:focus {
+	background-color: var(--button-primary-bg-color-hover);
 }
 
-.buttonPortfolio:hover,
-.buttonPortfolio:focus{
-  color:#FFFFFF;
-  background-color:#404BBF;
-
+.list-portfolio {
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: #2e2f42;
 }
 
-
-
-.portfolioProducts{
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #2E2F42;
-}
-
-.productsSorting{
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
-
+.item-portfolio {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #434455;
 }
